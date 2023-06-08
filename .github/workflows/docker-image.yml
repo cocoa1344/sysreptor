@@ -21,7 +21,6 @@ jobs:
       uses: xom9ikk/dotenv@v2
       with:
         path: deploy
-        mode: development
         load-mode: strict
     -
         name: Login to Docker Hub
