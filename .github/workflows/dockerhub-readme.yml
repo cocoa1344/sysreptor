@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - README.md
+  workflow_dispatch: # on button click
 jobs:
   dockerHubDescription:
     runs-on: ubuntu-latest
