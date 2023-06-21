@@ -1,5 +1,31 @@
 # Changelog
 
+## v0.95 - 2023-06-21
+* Store a reference to the original project/design when copying
+* Add tags to projects
+* UI: Add icons for tags/members/language in project and template list
+* Add drag-and-drop PDF designer
+* Support SSO via Remote-User HTTP header
+* Allow disabling local authentication via username/password to force SSO
+* Support configuring default authentication provider via setting DEFAULT_AUTH_PROVIDER
+* Fix CSRF error during logout
+* Support automatic archiving of finished projects via setting AUTOMATICALLY_ARCHIVE_PROJECTS_AFTER
+* Support automatic deletion of old archived projects via setting AUTOMATICALLY_DELETE_ARCHIVED_PROJECTS_AFTER
+* Allow importing private designs
+* Show warnings and info messages in designer error list
+* Log invalid or unsupported CSS rules in PDF designer
+* Include font files in repository
+
+
+## v0.89 - 2023-06-06
+* Update dependencies to fix vulnerabilities in python requests (CVE-2023-32681) and webpack (CVE-2023-28154)
+* Prevent setting reference-type specific CSS classes to `<ref>` components with slot content
+* Prevent buffering full `StreamingHttpResponse` causing high memory load
+* Add fonts Roboto Flex, STIX Two Text and Arimo
+* Remove non-variable fonts Roboto, Tinos, Lato and Courier Prime
+* Configure fallback of common fonts to similar looking fonts (Arial, Helvetica, Times New Roman, Courier New, Verdana)
+
+
 ## v0.87 - 2023-05-24
 * Provide (optional) base styles in designer via `@import "/assets/global/base.css";`
 * Add `<ref>` component to designs to reference headings, figures, tables and findings
