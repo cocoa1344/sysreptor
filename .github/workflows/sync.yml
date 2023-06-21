@@ -13,6 +13,6 @@ jobs:
       - uses: tgymnich/fork-sync@v1.8
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
-          owner: syslifters
-          base: master
-          head: master
+          owner: Syslifters
+          base: main
+          head: main
