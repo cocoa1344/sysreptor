@@ -11,17 +11,15 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v1
+    -
+        name: Set up Docker
+        uses: crazy-max/ghaction-setup-docker@v1
     - run: |
         curl -s -L --output sysreptor.tar.gz https://github.com/syslifters/sysreptor/releases/latest/download/source-prebuilt.tar.gz
         tar -tzf sysreptor.tar.gz
         cd deploy
         cp app.env.example app.env
         docker compose build app
-    -
-        name: Set up Docker
-        uses: crazy-max/ghaction-setup-docker@v1
-    - uses: actions/checkout@v3
     -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
