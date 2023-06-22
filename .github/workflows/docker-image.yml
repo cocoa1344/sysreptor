@@ -21,7 +21,7 @@ jobs:
         tar -tzf sysreptor.tar.gz
         cd deploy
         cp app.env.example app.env
-        docker compose build app
+        docker build -t cocoa1344/sysreptor .
      
      -
         name: Set up QEMU
