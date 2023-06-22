@@ -19,6 +19,7 @@ jobs:
         tar -tzf sysreptor.tar.gz
         cd deploy
         cp app.env.example app.env
+        ls -lah
         docker compose build app
     -
         name: Set up QEMU
