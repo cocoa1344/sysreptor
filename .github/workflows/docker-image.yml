@@ -37,6 +37,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/arm64
           push: true
           tags: cocoa1344/sysreptor:latest , cocoa1344/sysreptor:${{ env.SYSREPTOR_VERSION }}
